@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/Test'
 
 Vue.use(VueRouter)
 
@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/test',
     name: 'Test',
-    component: () => import('../views/Test.vue')
+    component: () => import('../views/Test')
   },
   {
     path: '/about',
