@@ -1,0 +1,19 @@
+{
+  "name": "unmiracle-tail",
+  "version": "0.0.1",
+  "description": "不奇跡世界はお散歩日和/ダイスバトル用シミュレーター",
+  "main": "index.js",
+  "authors": {
+    "name": "Amatsuti",
+    "email": "oniprimsrq@yahoo.co.jp"
+  },
+  "repository": "https://github.com/Amatsuti/unmiracle-tail/unmiracle-tail",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
