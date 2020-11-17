@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <white-page>
     <div class="member">
       <textarea rows="30" v-model="pt1json" />
       <textarea rows="30" v-model="pt2json" />
@@ -9,12 +9,13 @@
       <button @click="simu">シミュレーション</button>
     </div>
     <battle-note :code="log" :pt1="pt1" :pt2="pt2"></battle-note>
-  </div>
+  </white-page>
 </template>
 
 <script>
 import BattleNote from '@/components/BattleNote'
 import { pt1, pt2, defSkill } from './const'
+import WhitePage from '@/components/WhitePage'
 /*eslint-disable no-undef */
 export default {
   data () {
@@ -27,7 +28,10 @@ export default {
       defSkill: JSON.stringify(defSkill, null, 2)
     }
   },
-  components: { BattleNote },
+  components: {
+    BattleNote,
+    WhitePage
+  },
   methods: {
     simu () {
       this.log = Unmiracle.simu(
